@@ -1,0 +1,46 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment files (NEVER commit secrets)
+.env
+*.env.local
+
+# Database
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Uploaded images
+data/uploads/*
+!data/uploads/.gitkeep
+
+# Trained model weights (keep them out of git)
+ml/model/*
+!ml/model/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+
+# Test / coverage
+.pytest_cache/
+htmlcov/
+.coverage
+.coverage.*
+
+# OS
+Thumbs.db
+.DS_Store

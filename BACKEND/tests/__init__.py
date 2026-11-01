@@ -1,0 +1,1 @@
+"""KrishiDrishti backend test suite."""

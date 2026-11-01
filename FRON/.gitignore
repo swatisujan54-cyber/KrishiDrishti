@@ -1,0 +1,17 @@
+# KrishiDrishti Frontend — local .gitignore
+# The root ../.gitignore already covers most of this.
+# These entries add extra protection at the folder level.
+
+# Dependencies (installed via "npm install")
+node_modules/
+
+# Production build output (generated via "npm run build")
+dist/
+
+# Environment files — for any API keys or secrets
+.env
+.env.local
+.env.*.local
+
+# Vite cache
+.vite/

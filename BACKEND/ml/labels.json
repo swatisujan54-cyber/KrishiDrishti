@@ -1,0 +1,13 @@
+{
+  "_meta": {
+    "description": "DEMO / PLACEHOLDER label mapping. Replace this file with the label mapping produced by your trained model. Each key is the model's output class index; each value is the disease label that corresponds to a Disease.label_key in the database.",
+    "model_type": "mock",
+    "version": "demo-0.0.1",
+    "note": "These labels match the demonstration diseases seeded in app/db/seed.py so that mock predictions can resolve to advisory records."
+  },
+  "0": "Tomato___Early_blight",
+  "1": "Tomato___Late_blight",
+  "2": "Potato___Early_blight",
+  "3": "Rice___brown_spot",
+  "4": "Maize___common_rust"
+}

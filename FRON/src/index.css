@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  Base styles — using plain CSS properties with the exact hex values from
+  tailwind.config.js.  We avoid @apply for custom colors here because
+  Tailwind's PostCSS plugin can fail to resolve custom color utilities
+  inside @layer base before the JIT scanner has generated them.
+*/
+@layer base {
+  body {
+    background-color: #fdfcf8;   /* cream-50 */
+    color: #36291a;               /* earth-900 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+
+  /* Warmer, more readable headings */
+  h1, h2, h3 {
+    color: #36291a;               /* earth-900 */
+    letter-spacing: -0.01em;
+  }
+
+  /* Subtle, natural link colour */
+  a {
+    color: #4d6638;               /* brand-600 */
+  }
+}
+
+@layer components {
+  /* A clean card style — not overly rounded, no heavy shadow */
+  .card {
+    background-color: #ffffff;
+    border: 1px solid #ecddb8;   /* cream-300 */
+    border-radius: 0.5rem;
+  }
+}
